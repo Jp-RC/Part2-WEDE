@@ -1,0 +1,67 @@
+header{
+    background-color: aqua;
+}
+footer{
+background-color: springgreen;
+}
+body{
+    background-color: whitesmoke;
+}
+.logo{
+    width: 40%;
+    max-width: 145px;
+    height: auto;
+    border: 2px solid black;
+    background-color: white;
+}
+.kpi{
+    font-size: clamp(13px,4vw,17px);
+    border: 2px solid black;
+    background-color: white;
+    line-height: 1.2;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+header section{
+    order: 3;
+}
+#O{
+    order: 2;
+    flex: 1;
+    text-align: center;
+}
+.logo{
+    order: 1;
+}
+@media (max-width: 600px) {
+    header{
+        gap: 8px;
+    }
+
+    #0 h1{
+        font-size: clamp(14px, 4vw, 22px);
+    }
+    .kpi{
+        font-size: clamp(10px, 3vw, 14px);
+    }
+    .logo{
+        width: 25%;
+        max-width: 80px;
+    }
+}
+p{
+    color: black;
+}
+h1{
+    color: black;
+}
+h2{
+    color: black;
+}
+h3{
+    color: black;
+}
