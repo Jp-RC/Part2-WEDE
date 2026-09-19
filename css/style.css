@@ -1,56 +1,76 @@
 header{
     background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
 }
 footer{
-background-color: springgreen;
+background-color: green;
 }
 body{
     background-color: whitesmoke;
 }
 .logo{
-    width: 40%;
-    max-width: 145px;
+    width: 120px;
+    max-width: 25%;
     height: auto;
     border: 2px solid black;
     background-color: white;
+    flex-shrink: 0;
+}
+#Org{
+    flex: 1;
+    text-align: center;
+    min-width: 0;
+}
+#0 h1{
+    font-size: clamp(22px, 3vw, 36px);
+    margin: 0;
 }
 .kpi{
     font-size: clamp(13px,4vw,17px);
     border: 2px solid black;
     background-color: white;
     line-height: 1.2;
+    padding: 5px;
+    flex-shrink: 0;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-header section{
-    order: 3;
-}
-#O{
-    order: 2;
-    flex: 1;
-    text-align: center;
-}
-.logo{
-    order: 1;
-}
-@media (max-width: 600px) {
+/*tablet*/
+@media (max-width: 900px) {
     header{
-        gap: 8px;
+        gap: 10px;
+    }
+    .logo{
+        width: 100px;
+        max-width: 20%;
     }
 
     #0 h1{
-        font-size: clamp(14px, 4vw, 22px);
+        font-size: clamp(18px, 3vw, 28px);
     }
     .kpi{
-        font-size: clamp(10px, 3vw, 14px);
+        font-size: clamp(11px, 1.8vw, 15px);
+    }
+}
+/*mobile*/
+@media (max-width: 600px) {
+    header{
+        gap: 6px;
     }
     .logo{
-        width: 25%;
-        max-width: 80px;
+        width: 70px;
+        max-width: 20%;
+    }
+
+    #0 h1{
+        font-size: clamp(13px, 4vw, 20px);
+    }
+    .kpi{
+        font-size: clamp(9px, 2.5vw, 12px);
+        padding: 3px;
     }
 }
 p{
@@ -63,5 +83,11 @@ h2{
     color: black;
 }
 h3{
+    color: black;
+}
+h4{
+    color: black;
+}
+ul{
     color: black;
 }
