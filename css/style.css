@@ -1,3 +1,4 @@
+/*header */
 header{
     background-color: aqua;
     display: flex;
@@ -6,12 +7,6 @@ header{
     gap: 15px;
     width: 100%;
     box-sizing: border-box;
-}
-footer{
-background-color: green;
-}
-body{
-    background-color: whitesmoke;
 }
 .logo{
     width: 120px;
@@ -38,7 +33,7 @@ body{
     padding: 5px;
     flex-shrink: 0;
 }
-/*tablet*/
+/*tablet for header*/
 @media (max-width: 900px) {
     header{
         gap: 10px;
@@ -55,7 +50,7 @@ body{
         font-size: clamp(11px, 1.8vw, 15px);
     }
 }
-/*mobile*/
+/*mobile for header*/
 @media (max-width: 600px) {
     header{
         gap: 6px;
@@ -72,6 +67,71 @@ body{
         font-size: clamp(9px, 2.5vw, 12px);
         padding: 3px;
     }
+}
+/* Footer */
+footer{
+background-color: brown;
+padding: 20px;
+padding-bottom: 30px;
+text-align: center;
+box-sizing: border-box;
+h4{
+    margin: 15px 0;
+}
+/* the paragraph in the footer is white */
+p{
+    color:white;
+}
+}
+/* decorating and positioning the Nav section */
+#Nav{
+ position: fixed;
+ bottom: -5px;
+ left: 0;
+ width: 100%;
+ background-color: aqua;
+ z-index: 1000;
+ padding: 10px;
+ box-sizing: border-box;
+}
+#N nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+#N nav a{
+    color: black;
+    text-decoration: none;
+}
+#N nav a:hover{
+    text-decoration: underline;
+}
+/* footer for tablet and mobile */
+@media (max-width: 900px) {
+    #N nav {
+
+        gap: 10px;
+    }
+
+    #N nav a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 600px) {
+    #N nav{
+        gap: 6px;
+    }
+    #N nav a {
+        font-size: 12px;
+    }
+    #Nav {
+        padding-bottom: 7px;
+    }
+}
+/*selectors in general for the website*/
+body{
+    background-color: whitesmoke;
 }
 p{
     color: black;
