@@ -1,3 +1,38 @@
+/*selectors in general for the whole of website*/
+body{
+    background-color: rgb(206, 243, 151);
+    margin: 0;
+}
+p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+h2{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+#M img{
+    width: 100%;
+    height: auto;
+}
 /*header */
 header{
     background-color: aqua;
@@ -7,6 +42,9 @@ header{
     gap: 15px;
     width: 100%;
     box-sizing: border-box;
+}
+header h4{
+        color: black;
 }
 .logo{
     width: 120px;
@@ -21,7 +59,7 @@ header{
     text-align: center;
     min-width: 0;
 }
-#0 h1{
+#H0 h1{
     font-size: clamp(22px, 3vw, 36px);
     margin: 0;
 }
@@ -54,6 +92,9 @@ header{
 @media (max-width: 600px) {
     header{
         gap: 6px;
+        h1{
+            font-size: 20px;
+        }
     }
     .logo{
         width: 70px;
@@ -70,11 +111,11 @@ header{
 }
 /* Footer */
 footer{
-background-color: brown;
-padding: 20px;
-padding-bottom: 30px;
-text-align: center;
-box-sizing: border-box;
+    background-color: brown;
+    padding: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+    box-sizing: border-box;
 h4{
     margin: 15px 0;
 }
@@ -86,7 +127,7 @@ p{
 /* decorating and positioning the Nav section */
 #Nav{
  position: fixed;
- bottom: -5px;
+ bottom: 0;
  left: 0;
  width: 100%;
  background-color: aqua;
@@ -103,11 +144,12 @@ p{
 #N nav a{
     color: black;
     text-decoration: none;
+    font-size: 17px;
 }
 #N nav a:hover{
     text-decoration: underline;
 }
-/* footer for tablet and mobile */
+/* footer(nav) for tablet and mobile */
 @media (max-width: 900px) {
     #N nav {
 
@@ -115,39 +157,31 @@ p{
     }
 
     #N nav a {
-        font-size: 14px;
+        font-size: 15px;
     }
+    #Nav {
+        padding-bottom: 30px;
+    }
+    
 }
 @media (max-width: 600px) {
     #N nav{
         gap: 6px;
     }
     #N nav a {
-        font-size: 12px;
+        font-size: 13px;
     }
     #Nav {
-        padding-bottom: 7px;
+        padding-bottom: 10px;
     }
 }
-/*selectors in general for the website*/
-body{
-    background-color: whitesmoke;
+/* index page */
+#M{
+    width: 100%;
 }
-p{
-    color: black;
-}
-h1{
-    color: black;
-}
-h2{
-    color: black;
-}
-h3{
-    color: black;
-}
-h4{
-    color: black;
-}
-ul{
-    color: black;
+#M img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
