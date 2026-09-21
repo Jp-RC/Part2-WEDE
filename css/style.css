@@ -29,10 +29,6 @@ ul{
     color: black;
     font-family: 'Times New Roman', Times, serif;
 }
-#M img{
-    width: 100%;
-    height: auto;
-}
 /*header */
 header{
     background-color: aqua;
@@ -176,12 +172,64 @@ p{
     }
 }
 /* index page */
-#M{
-    width: 100%;
+#Main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 #M img{
-    display: block;
-    width: 100%;
     max-width: 100%;
+    display: block;
     height: auto;
+    text-align: left;
+    padding: 10px;
+}
+.Dono{
+    display: block;
+    margin-left:0;
+    width: 150px;
+    height: 40px;
+    color:black;
+    background-color: aquamarine;
+}
+.Base h2{
+    font-size: 50px;
+}
+.Base p{
+    font-size: 27.5px;
+    line-height: 1.5;
+}
+#MV{
+    border-top: solid black;
+    border-bottom: solid black;
+    margin: 0;
+}
+#MissionAndVision h2{
+    text-align: center;
+    font-size: 30px;
+}
+#Vision{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 30px
+}
+#Vision picture{
+    width: 45%;
+}
+#Vision img{
+    width: 100%;
+    height: auto;
+}
+#Vision > div {
+    width: 55%;
+}
+#Vision h3{
+    font-size: 28px;
+    margin:0 0 15px 0;
+}
+#Vision p{
+    line-height: 1.6;
+    font-size: 17px;
+    margin: 0;
 }
