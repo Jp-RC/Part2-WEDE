@@ -204,32 +204,97 @@ p{
     border-bottom: solid black;
     margin: 0;
 }
+#MissionAndVision{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
 #MissionAndVision h2{
+    grid-column: 1 / 3;
     text-align: center;
     font-size: 30px;
 }
-#Vision{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding: 30px
+#Vision-image{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
 }
-#Vision picture{
-    width: 45%;
+#Vision-Text{
+    grid-column: 2;
+    grid-row: 2;
 }
-#Vision img{
-    width: 100%;
+#Mission-image{
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+    padding: 10px;
+}
+#Vision-image img, #Mision-image img{
+    max-width: 100%;
     height: auto;
 }
-#Vision > div {
-    width: 55%;
+#Mission-Text{
+    grid-column: 1;
+    grid-row: 3;
+    margin: 20px;
 }
-#Vision h3{
-    font-size: 28px;
-    margin:0 0 15px 0;
+#Mission-Text h3,#Vision-Text h3{
+    font-size: 30px;
 }
-#Vision p{
-    line-height: 1.6;
-    font-size: 17px;
-    margin: 0;
+#Mission-Text p,#Vision-Text p{
+    font-size: 20px;
+}
+/*for tablet*/
+@media (max-width: 900px) {
+#Main{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#M img{
+    max-width: 100%;
+    height: auto;
+}
+.Base {
+    width: 50%;
+}
+.Base h2{
+    font-size: 24px;
+}
+.Base p{
+    font-size: 15px;
+}
+}
+/*for mobile*/
+@media (max-width: 600px) {
+#Main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#M{
+    width: 100%;
+    text-align: center;
+}
+#M img{
+    max-width: 100%;
+    height: auto;
+    margin-left: 40px;
+}
+.Base {
+    width: 100%;
+    text-align: center;
+}
+.Base h2{
+    font-size: 22px;
+}
+.Base p{
+    font-size: 14px;
+    text-align: left;
+}
+.Dono{
+    display: block;
+    margin: 20px auto;
+}
 }
