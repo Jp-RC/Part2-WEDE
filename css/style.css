@@ -1,4 +1,4 @@
-/*selectors in general for the whole of website*/
+/*Topography*/
 body{
     background-color: rgb(206, 243, 151);
     margin: 0;
@@ -109,7 +109,7 @@ header h4{
 footer{
     background-color: brown;
     padding: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     text-align: center;
     box-sizing: border-box;
 h4{
@@ -130,6 +130,7 @@ p{
  z-index: 1000;
  padding: 10px;
  box-sizing: border-box;
+ box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
 }
 #N nav{
     display: flex;
@@ -141,8 +142,16 @@ p{
     color: black;
     text-decoration: none;
     font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 #N nav a:hover{
+    background-color: white;
+    color: black;
+}
+#N nav a.active{
+    font-weight: bold;
     text-decoration: underline;
 }
 /* footer(nav) for tablet and mobile */
@@ -310,7 +319,7 @@ p{
     font-size: 45px;
 }
 #About img{
-    max-width: 600px;
+    max-width: 550px;
     margin: 0 auto;
     display: block;
     filter: grayscale(75%);
@@ -338,3 +347,97 @@ p{
 }
 }
 /*Donate*/
+#Reason-dono{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+}
+.D{
+    margin: 20px;
+}
+.Don{
+    text-align: center;
+    font-size: 40px;
+}
+#Reason-dono{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.Reason-pic{
+    grid-column: 1;
+}
+.Reason-d{
+    grid-column: 2;
+}
+.Reason-pic img{
+    max-width: 600px;
+    border: 5px solid brown;
+}
+.Reason-d h3{
+    font-size: 30px;
+}
+.Reason-d ul{
+    font-size:20px;
+    line-height: 2;
+}
+.Reason-d ol{
+    font-size:20px;
+    line-height: 1.5;
+}
+#Bank-details{
+    border: 10px solid black;
+    background-color: white;
+}
+.Bank h4{
+    color:black;
+    padding-right: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.Bank ul{
+    line-height: 2;
+}
+#SecurityTip{
+    display: table;
+    margin: 20px auto 0;
+    border: 5px solid rgb(134, 11, 11);
+    border-radius: 5%;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(247, 187, 187);
+}
+.Secure h5{
+    font-size: 20px;
+    text-align: left;
+}
+.Secure p{
+    font-size: 20px;
+}
+/*tablet*/
+@media (max-width: 900px) {
+.Reason-d h3{
+    font-size: 20px;
+}
+.Reason-d ul{
+    font-size:15px;
+    line-height: 1.4;
+}
+.Reason-d ol{
+    font-size:15px;
+    line-height: 1.2;
+}
+}
+@media (max-width: 600px) {
+    #Reason-dono{
+        grid-template-columns: 1fr;
+    }
+    .Reason-pic{
+        grid-column: 1;
+        text-align: center;
+    }
+    .Reason-d{
+        grid-column: 1;
+    }
+}
+/*Letters and News*/
