@@ -298,3 +298,43 @@ p{
     margin: 20px auto;
 }
 }
+/*About Us*/
+#AbUs{
+    margin: 10px;
+}
+#AbUs h2{
+    font-size: 30px;
+}
+#About h3{
+    text-align: center;
+    font-size: 45px;
+}
+#About img{
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    filter: grayscale(75%);
+    border: solid black;
+}
+#About ul{
+    line-height: 3;
+}
+/*tablets*/
+@media (max-width: 900px){
+#About h2{
+    font-size: 25px;
+}
+#About h3{
+    font-size: 20px;
+}
+#About ul{
+    line-height: 2;
+}
+}
+/*mobile*/
+@media (max-width: 600px){
+#About ul{
+    line-height: 2;
+}
+}
+/*Donate*/
