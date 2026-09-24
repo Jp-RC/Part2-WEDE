@@ -441,3 +441,39 @@ p{
     }
 }
 /*Letters and News*/
+.LetHead{
+    text-align: center;
+}
+#News{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+.NL{
+    order: 1;
+}
+.NL img{
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+.NLE{
+    order: 2;
+    border: 3px solid black;
+    line-height: 2;
+    margin: 20px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+/*mobile*/
+@media (max-width: 600px) {
+    #News{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+    .NLE h3{
+        font-size: 18px;  
+    }
+}
+/*

@@ -26,15 +26,20 @@
                         </div>
             </header>
         <main>
+            <h2 class="LetHead">
+                <u>News/Letters</u>
+            </h2>
             <section id="News">
-                <div id="N/L">
-                    <h2>
-                        News/Letters
-                    </h2>
-                    <img src="images/News.jpg" width="200">
-                    <p>
-                        <h3><i> Sorry...no upcoming events yet</i></h3>
-                    </p>
+                    <div class="NL">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/News-low.jpg">
+                        <source media="(max-width: 900px)" srcset="images/News-medium.jpg">
+                        <img src="images/News-high.jpg" alt="hamster with a letter">
+                    </picture>
+                    </div>
+                    <div class="NLE">
+                        <h3>Events:</h3>
+                        <p><i> Sorry...no upcoming events yet</i></p>
                 </div>
             </section>
         </main>
