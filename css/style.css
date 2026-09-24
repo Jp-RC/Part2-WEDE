@@ -476,4 +476,116 @@ p{
         font-size: 18px;  
     }
 }
-/*
+/*ContactUs*/
+.Que{
+    margin: 20px;
+}
+.Que h2{
+    text-align: center;
+}
+.Q-order{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+#Query{
+    order: 1;
+}
+#Q img{
+    max-width: 500px;
+}
+/*Styling the query form*/
+#QueryForm{
+    order:2;
+}
+#QForm h4{
+    color: black;
+}
+#QueryForm{
+    padding: 40px 20px;
+}
+#QForm{
+    max-width: 500px;
+    margin: auto;
+}
+#QForm form{
+    background: rgb(120, 49, 49);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(35, 32, 32);
+}
+#QForm h4{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+#QForm form > div{
+    margin-bottom: 14px;
+}
+#Form label{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+#QForm input,
+#QForm select,
+#QForm textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+}
+#QForm textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+#QForm input:focus,
+#QForm select:focus,
+#QForm textarea:focus {
+    outline: none;
+    border: 2px solid rgb(55, 136, 177);
+}
+#QForm button{
+    display: block;
+    margin: 10px auto 0;
+    padding: 8px 22px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(55, 136, 177);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+#QForm button:hover{
+    opacity: 0.85;
+}
+/*tablet*/
+@media (max-width:900px){
+    .Q-order{
+        grid-template-columns: 1fr;
+    }
+    .owl img{
+    display: block;
+    margin: 0 auto;
+    }
+    #Q h3{
+        margin-left: 30px;
+    }
+}
+@media (max-width:600px){
+    .Q-order{
+        grid-template-columns: 1fr;
+    }
+    .owl img{
+    display: block;
+    margin: 0 auto;
+    }
+    #Q h3{
+        font-size: 20px ;
+    }
+}
