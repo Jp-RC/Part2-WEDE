@@ -239,7 +239,7 @@ p{
     text-align: center;
     padding: 10px;
 }
-#Vision-image img, #Mision-image img{
+#Vision-image img, #Mission-image img{
     max-width: 100%;
     height: auto;
 }
@@ -284,12 +284,13 @@ p{
 }
 #M{
     width: 100%;
-    text-align: center;
 }
 #M img{
     max-width: 100%;
     height: auto;
-    margin-left: 40px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
 }
 .Base {
     width: 100%;
@@ -301,6 +302,7 @@ p{
 .Base p{
     font-size: 14px;
     text-align: left;
+    margin-left: 10px;
 }
 .Dono{
     display: block;
@@ -319,6 +321,7 @@ p{
     font-size: 45px;
 }
 #About img{
+    max-width: 100%;
     max-width: 550px;
     margin: 0 auto;
     display: block;
@@ -326,6 +329,7 @@ p{
     border: solid black;
 }
 #About ul{
+    font-size: 20px;
     line-height: 3;
 }
 /*tablets*/
@@ -338,12 +342,14 @@ p{
 }
 #About ul{
     line-height: 2;
+    font-size: 15px;
 }
 }
 /*mobile*/
 @media (max-width: 600px){
 #About ul{
     line-height: 2;
+    font-size: 12px;
 }
 }
 /*Donate*/
@@ -371,6 +377,7 @@ p{
     grid-column: 2;
 }
 .Reason-pic img{
+    max-width: 100%;
     max-width: 600px;
     border: 5px solid brown;
 }
@@ -493,6 +500,7 @@ p{
 }
 #Q img{
     max-width: 500px;
+    max-width: 100%;
 }
 /*Styling the query form*/
 #QueryForm{
