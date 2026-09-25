@@ -38,4 +38,8 @@ Abraham chamber, 2026. Vision [online] Available at: https://encrypted-tbn0.gsta
 
 Abraham chamber, 2026. Vision [online] Available at: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPBbcyPXMPJw6XlSBvhVmiFGhi0MZqYKgJ-KPQf8QTLttgfDemZAKLEZA&s=10t [Accessed 17 August 2026]
 
+Evidence in screenshot of website corresponding on mobile, tablet and windows device in pdf:
+[tablet perspective.pdf](https://github.com/user-attachments/files/32644606/tablet.perspective.pdf)
+[windows perspective.pdf](https://github.com/user-attachments/files/32644605/windows.perspective.pdf)
+[mobile perspective.pdf](https://github.com/user-attachments/files/32644604/mobile.perspective.pdf)
 
