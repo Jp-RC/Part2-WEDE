@@ -597,3 +597,17 @@ p{
         font-size: 20px ;
     }
 }
+/*INTERACTIVE MAP*/
+#rescue-map {
+    height: 350px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+
+}
+@keyframes mapfadeIn{
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

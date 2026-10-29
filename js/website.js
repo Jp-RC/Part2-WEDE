@@ -81,4 +81,86 @@ if(visitorCount){
         requestAnimationFrame(countUp);
     }
 }
-//
+//INTERACTIVE MAP
+const rescueMap = document.getElementById("rescue-map");
+
+if (rescueMap && typeof L !== "undefined") {
+    const map = L.map("rescue-map").setView(
+        [-25.792573, 28.576557],
+        13
+    );
+
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([-25.792573, 28.5765557])
+        .addTo(map)
+        .bindPopup(
+            "<b>Wet Nose Animal Rescue Centre</b><br>" +
+            "Plot 75 R104, Vaalbank-B, Bronkhorstsspuit"
+        )
+        .openPopup();
+}
+//transition of donation button
+const transButton = document.querySelector(".Dono");
+
+if (transButton) {
+    transButton.addEventListener("mouseenter", function () {
+        transButton.style.transition = "transform 0.3s ease, box-shadow 0.3s ease";
+        transButton.style.transform = "translateY(-4px)";
+        transButton.style.boxShadow = "0 6px 12px rgba(0,0,0,0.2s)";
+    });
+
+    transButton.addEventListener("mouseleave", function () {
+        transButton.style.transform = "translateY(0)";
+        transButton.style.boxShadow = "none";
+    });
+}
+//lightbox of images
+const revealElements = document.querySelectorAll("img").forEach(function (image){
+    image.style.cursor = "pointer";
+
+    image.addEventListener("click", function() {
+
+        const lightbox = document.createElement("div");
+
+        lightbox.style.position = "fixed";
+        lightbox.style.top = "0";
+        lightbox.style.left = "0";
+        lightbox.style.width = "100%";
+        lightbox.style.height = "100%";
+        lightbox.style.backgroundColor = "rgba(0,0,0,0.85)";
+        lightbox.style.display = "flex";
+        lightbox.style.justifyContent = "center";
+        lightbox.style.alignItems = "9999";
+        lightbox.style.cursor = "pointer";
+
+        const enlargedImage = document.createElement("img");
+        enlargedImage.src = image.src;
+        enlargedImage.alt = image.alt;
+        enlargedImage.style.maxWidth = "90%";
+        enlargedImage.style.maxHeight = "85%";
+        enlargedImage.style.objectFit = "contain";
+        enlargedImage.style.borderRadius = "8px";
+        enlargedImage.style.cursor = "default";
+
+        lightbox.appendChild(enlargedImage);
+        document.body.appendChild(lightbox);
+
+        //closes when back ground is clicked
+        lightbox.addEventListener("click", function (event) {
+            if (event.target === lightbox) {
+                lightbox.remove();
+            }
+        });
+        function closeLightbox (event) {
+            if (event.key === "Escape") {
+                lightbox.remove();
+                document.removeEventListener("keydown", closeLightbox)
+            }
+        }
+        document.addEventListener("keydown", closeLightbox);
+    });
+});
